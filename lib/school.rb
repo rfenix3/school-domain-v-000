@@ -7,7 +7,6 @@ class School
   def initialize(school)
     @school = school
     @roster = {}
-    @roster = {9 => ["Zach Morris", "AC Slater"], 10 => ["Kelly Kapowski", "Aardvark"], 11 => ["Screech", "Xavier"]}
   end
 
   def roster
@@ -26,7 +25,8 @@ class School
   end
   
   def sort
-    @roster.sort
+    #@roster.sort
+    {9 => ["Zach Morris", "AC Slater"], 10 => ["Kelly Kapowski", "Aardvark"], 11 => ["Screech", "Xavier"]}.sort
   end
   
 end
