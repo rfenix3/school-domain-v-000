@@ -28,7 +28,7 @@ class School
     #@roster.sort
     #{9 => ["Zach Morris", "AC Slater"], 10 => ["Kelly Kapowski", "Aardvark"], 11 => ["Screech", "Xavier"]}.sort
     @roster.map do |key, value|
-      key => value.sort
+      key :value.sort
     end
     
   end
