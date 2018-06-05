@@ -6,7 +6,7 @@ class School
 
   def initialize(school)
     @school = school
-    #@roster = {}
+    @roster = {}
     @roster = {9 => ["Zach Morris", "AC Slater"], 10 => ["Kelly Kapowski", "Aardvark"], 11 => ["Screech", "Xavier"]}
   end
 
