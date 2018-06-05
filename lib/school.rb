@@ -2,6 +2,7 @@
 class School
 
   attr_accessor :roster
+  attr_reader :student, :grade
 
   def initialize(school)
     @school = school
@@ -12,10 +13,12 @@ class School
   end
 
   def add_student(student, grade)
-    if roster[grade].nil?
-      roster.[grade] = []
+    @student = student
+    @grade = grade
+    if @roster[@grade].nil?
+      @roster.[@grade] = []
     end
-    @roster[grade] << student
+    @roster[@grade] << student
   end
   
   
